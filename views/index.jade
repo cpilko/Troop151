@@ -1,17 +1,39 @@
 extends _layout
 
+block vars
+  -var pageTitle = 'Home'
+  -var pageDesc = 'Troop 151, Broomall PA'
+
 block content
   article #masthead
     header
       h1 Troop 151, Broomall PA
       h2 A Scout Lead Troop Chartered to Marple Presbyterian Church
-  include about.jade
-  include events.jade
-  include join.jade
-  incldue support.jade
-  include contact.jade
 
+  article #about
+    header
+      h3 About Us
+    .col(1/3)#meetings
+      We meet Wednesday nights at 7pm during the school year.
+    .col(1/3)#location
+      Our meetings are in Fellowship Hall at Marple Presbyterian Church (a(href=https://www.google.com/maps/place/Marple+Presbyterian+Church/@39.9850625,-75.3606328,17z/data=!4m5!3m4!1s0x89c6ea8a1e73155f:0xd1515550b1534517!8m2!3d39.9850625!4d-75.3584441), target=_blank) Map
+    .col(1/3)#scoutled
+      Our Scouts choose the program, and the leaders help them make it happen. Our goal is to have one outing each month.
+    .more
+      a(href=about.html, class=button) Learn More
 
-  h3 Welcome to roots!
-  :marked
-    Find tutorials and documentation at http://roots.cx : )
+  article #events
+    header
+      h3 Upcoming Events
+    p Todo: Build Facebook events importer
+
+    article #leadership
+      header
+        h3 Our Leaders
+      p Todo: Build mixin to display leaders.
+
+  article #contact
+    header
+      h3 Contact Us
+    .form
+      p Todo: Contact form
