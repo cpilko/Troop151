@@ -15,4 +15,4 @@ module.exports =
   ]
 
   stylus:
-    use: [axis(), rupture(), autoprefixer()]
+    use: [axis(), rupture(), autoprefixer(), jeet()]
