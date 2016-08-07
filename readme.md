@@ -10,8 +10,9 @@ This website is a static site, built with the [roots](http://roots.cx) static si
 
 ### Contributing to the Website
 
-To get started you will need:
-- a [GitHub account](https://github.com/join). Tell Mr. Pilko your username at a meeting, and he'll make you a contributor to the website.
+To get started you will need a [GitHub account](https://github.com/join). Tell Mr. Pilko your username at a meeting, and he'll make you a contributor to the website.
+
+You'll also need some software:
 - a [git client](https://git-scm.com/downloadshttps://git-scm.com/downloads). (The [GitHub Desktop](https://desktop.github.com/) is good for starters.)
 - [node.js](http://nodejs.org) installed on your computer.
 - A text editor. Notepad will work fine, but something like [Atom](https://atom.io/) is a lot more powerful.
