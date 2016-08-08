@@ -15,7 +15,10 @@ html
 
   body
     include _header.jade
-    block content
+    #main
+      block masthead
+      #content
+        block content
     include _foot.jade
 
     != js()
