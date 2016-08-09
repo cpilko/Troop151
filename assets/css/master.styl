@@ -25,7 +25,7 @@ article header
   text-align center
   text-transform uppercase
 
-#masthead
+#home-masthead
   height 80vh
   width 100%
   padding-top 6em
@@ -36,15 +36,35 @@ article header
     font-style italic
     text-transform none
 
-#content
-  width 95%
-  margin 0 auto
-
 .home-article
-  height 100vh
+  min-height 100vh
+  padding-top 20vh
+  padding-right 2.5%
+  padding-left 2.5%
+  h3
+    font-size 3em
+
+#about
+  background-color #FFEDAA
+
+#events
+  background-color #FFDDAA
+
+#leadership
+  background-color #FFFEAA
+
+#contact
+  background-color #AAA1E2
 
 .col-thirds
   col(1/3)
+  img
+    max-width 200px
+    width 80%
+    display block
+    margin 0 auto
+  p
+    text-align: justify
 
 .col-wrap
   cf()
@@ -53,6 +73,7 @@ article header
   cf()
 
 .more-wrap
+  display table
   margin 0 auto
 
 .more-button

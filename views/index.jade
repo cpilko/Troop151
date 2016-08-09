@@ -10,7 +10,7 @@ block vars
   -var pageDesc = 'Troop 151, Broomall PA'
 
 block masthead
-  article#masthead
+  article#home-masthead
     header
       h1 Troop 151, Broomall PA
       p A Scout-Led Troop
@@ -22,14 +22,18 @@ block content
       h3 About Us
     .col-wrap
       #meetings.col-thirds
-        p We meet Wednesday nights at 7pm during the school year.
-      #location.col-thirds
+        img(src='/img/citizenship_in_the_community_lg.png')
         p.
-          Our meetings are in Fellowship Hall at Marple Presbyterian Church
+          We meet at 7pm on Wednesdays during the school year in Fellowship Hall at Marple Presbyterian Church
           (#[a(href='https://www.google.com/maps/place/Marple+Presbyterian+Church/@39.9850625,-75.3606328,17z/data=!4m5!3m4!1s0x89c6ea8a1e73155f:0xd1515550b1534517!8m2!3d39.9850625!4d-75.3584441', target='_blank') Map])
+      #outings.col-thirds
+        img(src='/img/camping_lg.png')
+        p.
+          Each month our goal is to have two outings: One campout and one other event.
       #scoutled.col-thirds
-        p Our Scouts choose the program, and the leaders help them make it happen. Our goal is to have one outing each month.
-    +linkbutton('about', 'Learn More')
+        img(src='/img/hiking_lg.png')
+        p We are Scout-Led: Our Scouts develop our program, and our adult leaders help #[em them] make it happen.
+    +linkbutton('about.html', 'Learn More')
 
   article#events.home-article
     header
@@ -37,10 +41,10 @@ block content
     .col-wrap
       .event-gallery
 
-    article#leadership.home-article
-      header
-        h3 Our Leaders
-      p Todo: Build mixin to display leaders.
+  article#leadership.home-article
+    header
+      h3 Our Leaders
+    p Todo: Build mixin to display leaders.
 
   article#contact.home-article
     header
