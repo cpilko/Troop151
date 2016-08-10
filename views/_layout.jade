@@ -1,8 +1,9 @@
 doctype html
-html
+html(prefix='og: http://ogp.me/ns#')
   block vars
     -var pageTitle = 'Layout'
     -var pageDesc = 'Description of this page'
+    -var mastheadImgUrl ='/img/masthead_img.jpg'
 
   head
     meta(charset='utf8')
@@ -11,6 +12,13 @@ html
     meta(name='author', content= "Troop 151 Broomall, PA")
     meta(name="viewport" content="width=device-width, initial-scale=1")
     title= pageTitle
+
+    <meta property="og:title" content="#{pageTitle}" />
+    <meta property="og:description" content="#{pageDesc}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="#{mastheadImgUrl}" />
+
     != css()
 
   body
