@@ -6,7 +6,7 @@ css_pipeline = require 'css-pipeline'
 jeet         = require 'jeet'
 
 module.exports =
-  ignores: ['readme.md', '**/layout.*', '**/_*', '.gitignore', 'ship.*conf']
+  ignores: ['readme.md', '**/layout.*', '**/_*', '.gitignore', 'ship.*conf', 'preview']
 
   output: 'public'
 
