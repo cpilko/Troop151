@@ -5,6 +5,12 @@ mixin linkbutton(link, text)
     span.more-wrap
       a(href=link, class='more-button')= text
 
+mixin eventItem(title, eventImage)
+  .event-gallery
+    img(src='/img/events/'+eventImage)
+    h4= title
+    block
+
 block vars
   -var pageTitle = 'Home'
   -var pageDesc = 'Troop 151, Broomall PA'
@@ -38,12 +44,24 @@ block content
     header
       h3 Sample Events
     .col-wrap
-      .event-gallery
+      +eventItem('Camping', 'camping.jpg')
+      +eventItem('Civics', 'civics.jpg')
+      +eventItem('Marksmanship', 'shooting.jpg')
+      +eventItem('STEM', 'stem.jpg')
+      +eventItem('Service', 'service.jpg')
+      +eventItem('Patriotism', 'parade_marching.jpg')
+      +eventItem('Winning', 'winning.jpg')
+      +eventItem('Learning', 'learning.jpg')
+      +eventItem('Hiking', 'hiking.jpg')
+      +eventItem('Summer Camp', 'summer_camp.jpg')
+      +eventItem('Gaga', 'gaga.jpg')
+      +eventItem('First Aid', 'first_aid.jpg')
 
-  article#leadership.home-article
+
+  article#support.home-article
     header
-      h3 Our Leaders
-    p Todo: Build mixin to display leaders.
+      h3 Support Us
+    p Todo: Build Fundraising Widget.
 
   article#contact.home-article
     header
