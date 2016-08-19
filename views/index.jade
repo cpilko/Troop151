@@ -11,7 +11,7 @@ mixin eventItem(title, eventImage)
 block vars
   -var pageTitle = 'Home'
   -var pageDesc = 'Troop 151, Broomall PA'
-  -var mastheadImgUrl ='./img/masthead_img.jpg'
+  -var mastheadImg ='masthead_img.jpg'
 
 block masthead
       h1 Troop 151, Broomall PA
@@ -19,7 +19,7 @@ block masthead
       p Chartered to Marple Presbyterian Church
 
 block content
-  article#about.home-article
+  article#about
     header
       h3 About Us
     .col-wrap
@@ -37,7 +37,7 @@ block content
         p We are Scout-Led: Our Scouts develop our program, and our adult leaders help #[em them] make it happen.
     +linkbutton('about.html', 'Learn More')
 
-  article#events.home-article
+  article#events
     header
       h3 What We Do
     .col-wrap
@@ -67,9 +67,9 @@ block content
         p The most important object in Boy Scout training is to educate, not instruct
     p.events-foot.
       All quotes by Lord Baden-Powell, the founder of Scouting
-      
+
   //-
-    article#support.home-article
+    article#support
       header
         h3 Support Us
       p Todo: Build a Fundraising Widget.
