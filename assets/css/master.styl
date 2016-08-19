@@ -1,8 +1,12 @@
 @import '_settings'
 @import 'jeet'
+@import '_colors'
 
 normalize-css()
 base()
+
+color1 = scoutingRed
+color2 = scoutingBlue
 
 body
   padding 0
@@ -46,10 +50,10 @@ article header
     font-size 3em
 
 .home-article + .home-article
-  border-top 2vh solid #003f87
+  border-top 2vh solid color2
 
 footer
-  background-color #202020
+  background-color #222
   min-height 50vh
   color white
 
@@ -81,8 +85,8 @@ footer
     bottom 0
     width 100%
     height 30%
-    background-color #ce1126B3
-    border-top 1em solid #003f87B3
+    background-color alpha(color1, 0.7)
+    border-top 1em solid alpha(color2, 0.7)
     margin 0
     padding 0
     z-index 2
@@ -102,10 +106,9 @@ footer
   p:after
     content close-quote
 
-
-
 .col-wrap
   cf()
+  margin-bottom 1em
 
 .more-div
   cf()
@@ -115,4 +118,23 @@ footer
   margin 0 auto
 
 .more-button
-  button(red, large, white)
+  button(color1, large, white)
+
+.formcol
+  col(1/2)
+
+#contact-form
+  .form
+    margin-top 0.7em
+  +html5-inputs()
+    input(color2, 95%)
+    font-size 115%
+  label
+    label(block)
+  input[type=submit]
+    cf()
+    button(color2, large, white)
+    margin 0 auto
+    display table
+  textarea
+    height 170px
