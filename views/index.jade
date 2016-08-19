@@ -1,10 +1,5 @@
 extends _layout
 
-mixin linkbutton(link, text)
-  .more-div
-    span.more-wrap
-      a(href=link, class='more-button')= text
-
 mixin eventItem(title, eventImage)
   .event-gallery
     img(src='./img/events/'+eventImage)
@@ -78,9 +73,3 @@ block content
       h3 Support Us
     p Todo: Build a Fundraising Widget.
     pre #{JSON.stringify(locals)}
-
-  article#contact.home-article
-    header
-      h3 Contact Us
-    .form
-      include _contact.jade

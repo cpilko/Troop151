@@ -1,3 +1,8 @@
+mixin linkbutton(link, text)
+  .more-div
+    span.more-wrap
+      a(href=link, class='more-button')= text
+
 doctype html
 html(prefix='og: http://ogp.me/ns#')
   block vars
@@ -28,11 +33,17 @@ html(prefix='og: http://ogp.me/ns#')
         header
           block masthead
             h1 Troop 151, Broomall PA
-              p A Scout-Led Troop
-              p Chartered to Marple Presbyterian Church
+            p A Scout-Led Troop
+            p Chartered to Marple Presbyterian Church
 
       #content
         block content
+        article#contact.home-article
+          header
+            h3 Contact Us
+          .form
+            include _contact.jade
+
     include _foot.jade
 
     != js()
