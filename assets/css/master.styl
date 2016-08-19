@@ -40,22 +40,21 @@ article header
   p
     font-style italic
     text-transform none
+    font-size 150%
+  h1
+    font-size 3em
 
 .home-article
   min-height 100vh
   padding-top 20vh
   padding-right 2.5%
   padding-left 2.5%
+  padding-bottom 3em
   h3
     font-size 3em
 
 .home-article + .home-article
   border-top 2vh solid color2
-
-footer
-  background-color #222
-  min-height 50vh
-  color white
 
 .col-thirds
   col(1/3)
@@ -106,6 +105,12 @@ footer
   p:after
     content close-quote
 
+.events-foot
+  font-style: italic
+  display: table
+  margin 0 auto
+  color color2
+
 .col-wrap
   cf()
   margin-bottom 1em
@@ -138,3 +143,34 @@ footer
     display table
   textarea
     height 170px
+
+footer
+  background-color #222
+  min-height 50vh
+  color white
+  padding 5vh 0
+  h4
+    margin-bottom 0.75em
+  p
+    margin 0.5em 1em
+  a
+    color white
+    text-decoration none
+    hover-color color1 true
+  ul
+    ul none
+    padding-left 0
+
+.join-button
+  button(color1, large, white)
+  display table
+  margin 1em auto
+
+.foot-img
+    margin-top 1.33em !important
+
+.foot-end
+  display table
+  margin 2em auto
+  padding 0 3em
+  border-top solid 1px white
