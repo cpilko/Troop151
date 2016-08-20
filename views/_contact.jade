@@ -64,8 +64,8 @@ form(
 script.
   var r = document.getElementById('__redirect')
   var s = window.location.href
-  if (s.indexOf('.html')) {
-    var re = '/(.+\/)(.+\.html$)/i'
+  if (s.indexOf('.html') !== -1 ) {
+    var re = /(.+\/)(.+\.html?$)/i
     r.value = s.replace(re, '$1') + 'thankyou.html'
   } else {
     r.value = s + 'thankyou.html'
