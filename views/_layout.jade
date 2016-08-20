@@ -6,9 +6,11 @@ mixin linkbutton(link, text)
 block vars
   -var pageTitle = 'Layout'
   -var pageDesc = 'Description of this page'
-  -var mastheadImg ='masthead_img.jpg'
 
--var mastheadImgUrl = './img/mastheads/' + mastheadImg
+if mastheadImg
+  -var mastheadImgUrl = './img/mastheads/' + mastheadImg
+else
+  -var mastheadImgUrl = './img/mastheads/masthead_img.jpg'
 
 doctype html
 html(prefix='og: http://ogp.me/ns#')
@@ -43,7 +45,7 @@ html(prefix='og: http://ogp.me/ns#')
         block content
         article#contact
           header
-            h3 Contact Us
+            h1 Contact Us
           #contact-form
             include _contact.jade
 
