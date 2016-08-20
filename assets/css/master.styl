@@ -1,6 +1,7 @@
 @import '_settings'
 @import 'jeet'
 @import '_colors'
+@import 'https://fonts.googleapis.com/css?family=Carter+One|Sanchez';
 
 normalize-css()
 base()
@@ -15,7 +16,7 @@ hf_text_color = white
 body
   padding 0
   margin-top 0
-  background-color Gainsboro
+  background-color #fafafa
 
 #top_nav
   top 0px
@@ -38,20 +39,26 @@ body
   color hf_text_color
   text-shadow 0.1em 0.1em 0.2em black
   text-align center
-  text-transform uppercase
   p
-    font-style italic
     text-transform none
     font-size 150%
+    font-family 'Sanchez'
   h1
-    font-size 3em
+    font-size 4em
+    font-family 'Carter One'
+    font-weight normal
+    text-transform uppercase
 
 article header
   text-align center
   text-transform uppercase
   color hf_bg_color
+  margin-bottom 1.2em
   h1
     font-size 3em
+    font-family 'Carter One'
+    font-weight normal
+    text-shadow 0.1em 0.1em 0.2em #bdbdbd
 
 article
   min-height 100vh
@@ -102,11 +109,13 @@ article + article
     padding 0.5em
   h4
     margin 0
+    font-family 'Sanchez'
   p
     margin 0.5em 0 0 0
     font-style italic
     font-size 0.9em
     text-align justify
+    hyphenation()
   p:before
     content open-quote
   p:after
