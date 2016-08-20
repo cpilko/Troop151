@@ -25,6 +25,7 @@ body
     text-decoration: none
   h1
     margin 0
+    font-family 'Sanchez'
 
 #main
   margin-top 43px
@@ -49,22 +50,62 @@ body
     font-weight normal
     text-transform uppercase
 
-article header
-  text-align center
-  text-transform uppercase
-  color hf_bg_color
-  margin-bottom 1.2em
+#content
   h1
     font-size 3em
     font-family 'Carter One'
     font-weight normal
     text-shadow 0.1em 0.1em 0.2em #bdbdbd
+    text-align center
+    text-transform uppercase
+    color hf_bg_color
+    margin-bottom 0.3em
+  h2
+    font-size 1.2em
+    font-family "Sanchez"
+    margin 0.3em inherit
+    text-align center
+
+.prose-page
+  max-width 55em
+  width 90%
+  margin 0 auto
+
+.toc
+  font-family "Sanchez"
+  ul
+    ul none
+    padding-left 0
+    text-align center
+    font-size 120%
+  a
+    color darken(dk_color, 60%)
+    text-decoration none
+    hover-color dk_color true
+
+[class$='-section']
+  a
+    color darken(dk_color, 60%)
+    text-decoration none
+    hover-color dk_color true
+
+.tool-section
+  dt
+    font-weight bold
+    font-size 120%
+    margin-top 0.8em
+    margin-bottom 0.4em
+  dt:after
+      content ":"
+  dd
+    margin-left 1.5em
+    margin-bottom 0.2em
+    a
+      text-decoration underline
 
 article
-  min-height 100vh
-  padding-top 20vh
-  padding-right 2.5%
-  padding-left 2.5%
+  padding-top 10vh
+  padding inherit 2.5%
   padding-bottom 3em
 
 article + article
@@ -170,7 +211,7 @@ footer
   p
     margin 0.5em 1em
   a
-    color hf_text_color
+    color lighten(lt_color, 75%)
     text-decoration none
     hover-color lt_color true
   ul
