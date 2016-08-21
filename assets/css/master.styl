@@ -13,19 +13,29 @@ dk_text_color = white
 hf_bg_color = #222
 hf_text_color = white
 
+title_font()
+  font-family "Carter One"
+subtitle_font()
+  font-family "Sanchez"
+
+html
+  font-size 100%
+  +below(600px)
+    font-size 75%
+
 body
   padding 0
   margin-top 0
   background-color #fafafa
 
 #top_nav
-  top 0px
+  top 0
   nav(1, hf_bg_color, hf_text_color, true)
   a
     text-decoration: none
   h1
     margin 0
-    font-family 'Sanchez'
+    subtitle_font()
 
 #main
   margin-top 43px
@@ -35,81 +45,81 @@ body
 #masthead
   height 80vh
   width 100%
-  padding-top 6em
+  padding-top 6rem
   background no-repeat center/cover LightSlateGray
   color hf_text_color
-  text-shadow 0.1em 0.1em 0.2em black
+  text-shadow 0.1rem 0.1rem 0.2rem black
   text-align center
   p
     text-transform none
-    font-size 150%
-    font-family 'Sanchez'
+    font-size 1.5rem
+    subtitle_font()
   h1
-    font-size 4em
-    font-family 'Carter One'
+    font-size 4rem
+    title_font()
     font-weight normal
     text-transform uppercase
 
 #content
   h1
-    font-size 3em
-    font-family 'Carter One'
+    font-size 3rem
+    title_font()
     font-weight normal
-    text-shadow 0.1em 0.1em 0.2em #bdbdbd
+    text-shadow 0.1rem 0.1rem 0.2rem #bdbdbd
     text-align center
     text-transform uppercase
     color hf_bg_color
-    margin-bottom 0.3em
+    margin-bottom 0.3rem
   h2
-    font-size 1.2em
-    font-family "Sanchez"
-    margin 0.3em inherit
+    font-size 1.2rem
+    subtitle_font()
+    margin 0.3rem 0
     text-align center
 
 .prose-page
-  max-width 55em
+  max-width 55rem
   width 90%
   margin 0 auto
 
 .toc
-  font-family "Sanchez"
+  subtitle_font()
   ul
     ul none
     padding-left 0
     text-align center
-    font-size 120%
+    font-size 1.2rem
   a
-    color darken(dk_color, 60%)
+    color darken(dk_color, 50%)
     text-decoration none
-    hover-color dk_color true
+    hover-color lighten(dk_color, 30%) true
 
 [class$='-section']
   a
-    color darken(dk_color, 60%)
+    color darken(dk_color, 50%)
     text-decoration none
-    hover-color dk_color true
+    hover-color lighten(dk_color, 30%) true
 
 .tool-section
   dt
     font-weight bold
-    font-size 120%
-    margin-top 0.8em
-    margin-bottom 0.4em
+    font-size 1.2rem
+    margin-top 0.8rem
+    margin-bottom 0.4rem
   dt:after
       content ":"
   dd
-    margin-left 1.5em
-    margin-bottom 0.2em
+    margin-left 1.5rem
+    margin-bottom 0.5rem
     a
       text-decoration underline
 
 article
   padding-top 10vh
-  padding inherit 2.5%
-  padding-bottom 3em
+  padding 0 2.5%
+  padding-bottom 3rem
 
 article + article
-  border-top 2vh solid dk_color
+  border-top 0.5rem solid dk_color
 
 .col-thirds
   col(1/3)
@@ -118,14 +128,19 @@ article + article
     width 80%
     display block
     margin 0 auto
-  p
-    text-align: justify
+  +below(600px)
+    stack()
+
+#about p
+  text-align justify
+  font-size 1.2rem
+  subtitle_font()
 
 .event-gallery
   col(1/3, cycle: 3)
   height 60vh
   position relative
-  margin-bottom 1.5em
+  margin-bottom 1.5rem
   img
     width 100%
     height 100%
@@ -140,27 +155,30 @@ article + article
     width 100%
     height 30%
     background-color alpha(lt_color, 0.7)
-    border-top 1em solid alpha(dk_color, 0.7)
+    border-top 1rem solid alpha(dk_color, 0.7)
     margin 0
     padding 0
     z-index 2
   .event-desc
     color lt_text_color
     margin 0
-    padding 0.5em
+    padding 0.5rem
   h4
     margin 0
-    font-family 'Sanchez'
+    subtitle_font()
   p
-    margin 0.5em 0 0 0
+    margin 0.5rem 0 0 0
     font-style italic
-    font-size 0.9em
+    font-size 0.9rem
     text-align justify
     hyphenation()
   p:before
     content open-quote
   p:after
     content close-quote
+  +below(600px)
+    col(1, uncycle)
+    stack()
 
 .events-foot
   font-style: italic
@@ -168,9 +186,44 @@ article + article
   margin 0 auto
   color dk_color
 
+.values-col
+  col(1/2)
+  text-align center
+  dt
+    subtitle_font()
+    font-size 1.2rem
+    margin-bottom 0.75rem
+    text-decoration underline
+  dd
+    margin-left 0
+    margin-bottom 0.25rem
+  +below(600px)
+    stack()
+
+.leader-gallery
+  col(1/3, cycle: 3)
+  margin-bottom 1.5rem
+  text-align center
+  img
+    max-width 200px
+    width 90%
+    padding 0 auto
+    border-radius 50%
+  .leader_name
+    subtitle_font()
+    font-size 1.2rem
+    margin-bottom 0.2rem
+  .leader_title
+    font-weight bold
+    margin-top 0.2rem
+  +below(600px)
+    col(1, uncycle)
+    stack()
+    text-align center
+
 .col-wrap
   cf()
-  margin-bottom 1em
+  margin-bottom 1rem
 
 .more-div
   cf()
@@ -184,13 +237,16 @@ article + article
 
 .formcol
   col(1/2)
+  +below(600px)
+    stack()
+    center()
 
 #contact-form
   .form
-    margin-top 0.7em
+    margin-top 0.7rem
   +html5-inputs()
     input(dk_color, 95%)
-    font-size 115%
+    font-size 1.15rem
   label
     label(block)
   input[type=submit]
@@ -207,9 +263,9 @@ footer
   color hf_text_color
   padding 5vh 0
   h4
-    margin-bottom 0.75em
+    margin-bottom 0.75rem
   p
-    margin 0.5em 1em
+    margin 0.5rem 1rem
   a
     color lighten(lt_color, 75%)
     text-decoration none
@@ -217,6 +273,11 @@ footer
   ul
     ul none
     padding-left 0
+  +below(600px)
+    .col-thirds
+      text-align center
+      li
+        padding 0
 
 .join-button
   button(lt_color, large, lt_text_color)
@@ -224,10 +285,10 @@ footer
   margin 1em auto
 
 .foot-img
-    margin-top 1.33em !important
+    margin-top 1.33rem !important
 
 .foot-end
   display table
-  margin 2em auto
-  padding 0 3em
+  margin 2rem auto
+  padding 0 3rem
   border-top solid 1px hf_text_color

@@ -11,13 +11,40 @@ block masthead
 block content
   article#mission
     heading
-      h1 Mission and Values
+      h1 Mission
+    //- p TODO: Write Mission Statement
+  article#values
+    heading
+      h1 Values
+      h2 Our values are the Scout Oath and Law
+    .col-wrap
+      .values-col
+        dl
+          dt The Scout Law
+          dd A Scout is:
+          dd Trustworthy, Loyal, Helpful,
+          dd Friendly, Corteous, Kind,
+          dd Obedient, Cheerful, Thrifty,
+          dd Brave, Clean, and Reverent
+      .values-col
+        dl
+          dt The Scout Oath
+          dd On my honor I will do my best to do my duty
+          dd to God and my country
+          dd and to obey the Scout Law;
+          dd to help other people at all times;
+          dd to keep myself physically strong,
+          dd mentally awake,
+          dd and morally straight.
   article#history
     heading
       h1 History
   article#leadership
     heading
       h1 Leadership
+    .col-wrap
+      include _leaders.jade
+    +linkbutton('resources.html#training', 'Become a Leader')
   article#eagles
     heading
       h1 Eagles Nest

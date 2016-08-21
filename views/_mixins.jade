@@ -1,0 +1,21 @@
+mixin linkbutton(link, text)
+  .more-div
+    span.more-wrap
+      a(href=link, class='more-button')= text
+
+mixin eventItem(title, eventImage)
+  .event-gallery
+    img(src='./img/events/'+eventImage)
+    .background-shade
+      .event-desc
+        h4= title
+        block
+
+mixin leader(name, title, profileImage)
+  .leader-gallery
+    if profileImage
+      img(src='./img/leaders/'+profileImage)
+    else
+      img(src='./img/leaders/no-photo.png')
+    p.leader_name= name
+    p.leader_title= title
