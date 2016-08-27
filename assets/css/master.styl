@@ -221,6 +221,25 @@ article + article
     stack()
     text-align center
 
+.eagle-gallery
+  col(1/3, cycle:3)
+  subtitle_font()
+  margin-bottom 0.15rem
+  img
+    height 4rem
+  .eagle-name
+    font-weight bold
+  p
+    margin 0.2em 0
+  .eagle-logo
+    display inline-block
+    vertical-align middle
+  .eagle-data
+    display inline-block
+    vertical-align middle
+  +below(600px)
+    col(2, uncycle, cycle: 2)
+
 .col-wrap
   cf()
   margin-bottom 1rem

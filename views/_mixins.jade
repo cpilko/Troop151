@@ -19,3 +19,11 @@ mixin leader(name, title, profileImage)
       img(src='./img/leaders/no-photo.png')
     p.leader_name= name
     p.leader_title= title
+
+mixin eagle(name, year)
+  .eagle-gallery
+    .eagle-logo
+      img(src='./img/eagle_badge.gif')
+    .eagle-data
+      p.eagle-name= name
+      p.eagle-year= year
