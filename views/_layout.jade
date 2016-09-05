@@ -19,10 +19,11 @@ html(prefix='og: http://ogp.me/ns#', lang='en')
       header
         include _top_nav.jade
         section#masthead(style='background: no-repeat center/cover url(#{mastheadImgUrl})')
-          block masthead
-            h1 Troop 151, Broomall PA
-            p A Scout-Led Troop
-            p Chartered to Marple Presbyterian Church
+          .masthead-content
+            block masthead
+              h1 Troop 151, Broomall PA
+              p A Scout-Led Troop
+              p Chartered to Marple Presbyterian Church
 
       #content
         block content

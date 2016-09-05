@@ -14,18 +14,18 @@ block content
     #toc.toc
       h1 Table of Contents
       ul
-        li: a(href='#terms') Terms and Conditions
-        li: a(href='#privacy') Privacy Policy
         li: a(href='#copyright') Copyright
-
-    #terms.terms-section
-      h1 Terms and Conditions
-      p TODO: Write T&C
-
-    #privacy.terms-section
-      h1 Privacy Policy
-      p TODO: Write privacy policy
+        li: a(href='#privacy') Privacy Policy
+        li: a(href='#terms') Terms and Conditions
 
     #copyright.terms-section
       h1 Copyright
-      p TODO: Write copyright section
+      include:marked _copyright.md
+
+    #privacy.terms-section
+      h1 Privacy Policy
+      include:marked _privacypolicy.md
+
+    #terms.terms-section
+      h1 Terms and Conditions
+      include:marked _terms.md

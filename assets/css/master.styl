@@ -43,17 +43,19 @@ body
   padding-right auto
 
 #masthead
-  height 80vh
+  height 100vh
   width 100%
-  padding-top 6rem
   background no-repeat center/cover LightSlateGray
   color hf_text_color
   text-shadow 0.1rem 0.1rem 0.2rem black
   text-align center
+  .masthead-content
+    vertically-align()
   p
     text-transform none
     font-size 1.5rem
     subtitle_font()
+    margin 0.3em 0
   h1
     font-size 4rem
     title_font()
@@ -133,7 +135,7 @@ article + article
 
 #about p
   text-align justify
-  font-size 1.2rem
+  font-size 1rem
   subtitle_font()
 
 .event-gallery
@@ -176,7 +178,7 @@ article + article
     content open-quote
   p:after
     content close-quote
-  +below(600px)
+  +below(800px)
     col(1, uncycle)
     stack()
 
@@ -226,7 +228,7 @@ article + article
   subtitle_font()
   margin-bottom 0.15rem
   img
-    height 4rem
+    height 3rem
   .eagle-name
     font-weight bold
   p
@@ -238,7 +240,7 @@ article + article
     display inline-block
     vertical-align middle
   +below(600px)
-    col(2, uncycle, cycle: 2)
+    col(1, uncycle)
 
 .col-wrap
   cf()
