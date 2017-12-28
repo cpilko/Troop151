@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "auto-reload-brunch": "^2.7.1",
     "autoprefixer": "^6",
     "axis": "^1.0.0",
     "babel-brunch": "^6.1.1",
@@ -12,8 +13,9 @@
     "postcss-brunch": "^2.1.0",
     "pug-brunch": "^1",
     "pugjs-brunch": "^2.10.1",
+    "replacer-brunch": "^1.0.1",
     "rupture": "^0.7.1",
     "stylus-brunch": "^2.10.0",
-    "uglify-js-brunch": "^2"
+    "uglify-js-brunch": "^2.10.0"
   }
 }
