@@ -1,13 +1,19 @@
 {
   "devDependencies": {
-    "brunch": "^2",
-    "babel-brunch": "^6",
-    "postcss-brunch": "^2",
-    "stylus-brunch": "^2",
-    "uglify-js-brunch": "^2",
     "autoprefixer": "^6",
-    "babel-preset-react": "^6",
+    "axis": "^1.0.0",
+    "babel-brunch": "^6.1.1",
     "babel-preset-latest": "^6",
-    "pug-brunch": "^1"
+    "babel-preset-react": "^6",
+    "brunch": "^2",
+    "coffeescript": "^2.1.0",
+    "jeet": "^7.2.0",
+    "markdown-brunch": "^1.7.2",
+    "postcss-brunch": "^2.1.0",
+    "pug-brunch": "^1",
+    "pugjs-brunch": "^2.10.1",
+    "rupture": "^0.7.1",
+    "stylus-brunch": "^2.10.0",
+    "uglify-js-brunch": "^2"
   }
 }
