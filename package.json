@@ -1,17 +1,19 @@
 {
-  "name": "-troop-151-website",
-  "description": "Roots.cx Website",
+  "name": "Troop-151-website",
+  "description": "Brunch Website",
+  "license": "MIT",
+  "repository": "github:cpilko/Troop151",
   "dependencies": {
-    "autoprefixer-stylus": "0.9.x",
-    "axis": "0.6.x",
-    "coffee-script": "1.x",
-    "css-pipeline": "0.3.x",
-    "jade": "1.x",
-    "js-pipeline": "0.2.x",
-    "jstransformer-marked": "1.x",
-    "marked": "0.3.x",
-    "rupture": "0.6.x",
-    "stylus": "0.54.x",
-    "jeet": "6.1.2"
+    "autoprefixer-stylus": ">=0.9.x",
+    "axis": ">=0.6.x",
+    "coffee-script": ">=1.x",
+    "css-pipeline": ">=0.3.x",
+    "pugjs-brunch": "^2.11.2",
+    "js-pipeline": ">=0.2.x",
+    "jstransformer-marked": ">=1.x",
+    "marked": ">=0.3.x",
+    "rupture": ">=0.6.x",
+    "stylus-brunch": ">=0.54.x",
+    "jeet": ">=6.1.2"
   }
 }

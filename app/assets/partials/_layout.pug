@@ -1,0 +1,38 @@
+include _mixins.pug
+
+block vars
+  -var pageTitle = 'Layout'
+  -var pageDesc = 'Description of this page'
+
+if mastheadImg
+  -var mastheadImgUrl = './img/mastheads/' + mastheadImg
+else
+  -var mastheadImgUrl = './img/mastheads/masthead_img.jpg'
+
+doctype html
+html(prefix='og: http://ogp.me/ns#', lang='en')
+  head
+    include _head.pug
+
+  body
+    #main
+      header
+        include _top_nav.pug
+        section#masthead(style='background: no-repeat center/cover url('+mastheadImgUrl+')')
+          .masthead-content
+            block masthead
+              h1 Troop 151, Broomall PA
+              p A Scout-Led Troop
+              p Chartered to Marple Presbyterian Church
+
+      #content
+        block content
+        article#contact
+          header
+            h1 Contact Us
+          #contact-form
+            include _contact.pug
+
+    include _foot.pug
+
+    // != js()
