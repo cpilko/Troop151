@@ -4,7 +4,7 @@ module.exports = {
     stylesheets: {joinTo: 'app.css'}
   },
   paths: {
-    public: './docs'
+    public: './preview'
   },
   plugins: {
     pug: {
@@ -13,6 +13,15 @@ module.exports = {
     },
     stylus: {
       plugins: ['autoprefixer-stylus', 'axis', 'rupture', 'jeet']
+    }
+  },
+  overrides: {
+    production: {
+      optimize: true,
+      sourceMaps: false,
+      paths: {
+        public: './docs'
+      }
     }
   }
 }

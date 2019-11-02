@@ -4,16 +4,16 @@
   "license": "MIT",
   "repository": "github:cpilko/Troop151",
   "dependencies": {
-    "autoprefixer-stylus": ">=0.9.x",
-    "axis": ">=0.6.x",
+    "autoprefixer-stylus": "^1.0.0",
+    "axis": "^1.0.0",
     "coffee-script": ">=1.x",
     "css-pipeline": ">=0.3.x",
-    "pugjs-brunch": "^2.11.2",
+    "jeet": "^7.2.0",
     "js-pipeline": ">=0.2.x",
     "jstransformer-marked": ">=1.x",
     "marked": ">=0.3.x",
-    "rupture": ">=0.6.x",
-    "stylus-brunch": ">=0.54.x",
-    "jeet": ">=6.1.2"
+    "pugjs-brunch": "^2.11.2",
+    "rupture": "^0.7.1",
+    "stylus-brunch": ">=0.54.x"
   }
 }
