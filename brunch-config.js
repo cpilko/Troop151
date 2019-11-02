@@ -20,7 +20,7 @@ module.exports = {
       optimize: true,
       sourceMaps: false,
       paths: {
-        public: './docs'
+        public: './public'
       }
     }
   }
