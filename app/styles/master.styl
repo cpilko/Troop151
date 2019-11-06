@@ -124,7 +124,7 @@ article + article
   border-top 0.5rem solid dk_color
 
 .col-thirds
-  col(1/3)
+  column(1/3)
   img
     max-width 200px
     width 80%
@@ -139,7 +139,7 @@ article + article
   subtitle_font()
 
 .event-gallery
-  col(1/3, cycle: 3)
+  column(1/3, $cycle: 3)
   height 60vh
   position relative
   margin-bottom 1.5rem
@@ -179,7 +179,7 @@ article + article
   p:after
     content close-quote
   +below(800px)
-    col(1, uncycle)
+    column(1)
     stack()
 
 .events-foot
@@ -189,7 +189,7 @@ article + article
   color dk_color
 
 .values-col
-  col(1/2)
+  column(1/2)
   text-align center
   dt
     subtitle_font()
@@ -203,7 +203,7 @@ article + article
     stack()
 
 .leader-gallery
-  col(1/3, cycle: 3)
+  column(1/3, $cycle: 3)
   margin-bottom 1.5rem
   text-align center
   img
@@ -219,12 +219,12 @@ article + article
     font-weight bold
     margin-top 0.2rem
   +below(600px)
-    col(1, uncycle)
+    column(1)
     stack()
     text-align center
 
 .eagle-gallery
-  col(1/3, cycle:3)
+  column(1/3, $cycle:3)
   subtitle_font()
   margin-bottom 0.15rem
   img
@@ -240,14 +240,14 @@ article + article
     display inline-block
     vertical-align middle
   +below(600px)
-    col(1, uncycle)
+    column(1)
 
 .col-wrap
-  cf()
+  clearfix()
   margin-bottom 1rem
 
 .more-div
-  cf()
+  clearfix()
 
 .more-wrap
   display table
@@ -257,7 +257,7 @@ article + article
   button(lt_color, large, lt_text_color)
 
 .formcol
-  col(1/2)
+  column(1/2)
   +below(600px)
     stack()
     center()
@@ -271,7 +271,7 @@ article + article
   label
     label(block)
   input[type=submit]
-    cf()
+    clearfix()
     button(dk_color, large, dk_text_color)
     margin 0 auto
     display table

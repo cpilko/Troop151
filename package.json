@@ -8,7 +8,7 @@
     "axis": "",
     "coffee-script": "",
     "css-pipeline": "",
-    "jeet": "",
+    "jeet": "7.2.0",
     "js-pipeline": "",
     "jstransformer-marked": "",
     "marked": "",

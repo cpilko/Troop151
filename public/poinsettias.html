@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="&quot;Thank You for contacting Troop 151&quot;">
+    <meta name="description" content="&quot;Troop 151 Annual Poinsettia Sale&quot;">
     <meta name="author" content="Troop 151 Broomall, PA">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Thank You</title><meta property="og:title" content=`"${pageTitle}"` />
+    <title>Poinsettias</title><meta property="og:title" content=`"${pageTitle}"` />
 <meta property="og:description" content=`"${pageDesc}"` />
 <meta property="og:type" content="website" />
 <meta property="og:image" content=`"${mastheadImgUrl}"` />
@@ -22,15 +22,38 @@
             <li><a href="#footer">&#x2630;</a></li>
           </ul>
         </nav>
-        <section id="masthead" style="background: no-repeat center/cover url(./img/mastheads/waterfall.jpg)">
+        <section id="masthead" style="background: no-repeat center/cover url(./img/mastheads/poinsettia.jpg)">
           <div class="masthead-content">
-            <h1>Thank You</h1>
-            <p>for your message.</p>
-            <p>Someone will reply to you shortly.</p>
+            <h1>Poinsettia Fundraiser</h1>
           </div>
         </section>
       </header>
       <div id="content">
+        <article id="example">
+          <div class="item-card">
+            <p class="item-name">6in Poinsettia</p>
+            <p class="item-description">One poinsettia plant in a 6in pot. Pot is foil covered.</p>
+            <p class="item-price">$10.00</p>
+            <div class="item-image"><img src="https://via.placeholder.com/150"></div>
+            <div class="item-form">
+              <form action="https://t151.foxycart.com/cart" method="post" accept-charset="utf-8"></form>
+              <input type="hidden" name="name" value="6in Poinsettia">
+              <input type="hidden" name="price" value="10">
+              <input type="hidden" name="code" value="P6">
+              <input type="hidden" name="expires" value="Wed Nov 06 2019 04:27:54 GMT+0000 (Coordinated Universal Time)">
+              <input type="number" name="quantity" value="1" min="0">
+              <label for="quantity">Qty</label>
+              <label class="option_label">color</label>
+              <select name="color">
+                <option value="Red">Red</option>
+                <option value="White">White</option>
+                <option value="Pink">Pink</option>
+                <option value="Marble">Marble</option>
+              </select>
+              <input class="submit" type="submit" value="Add 6in Poinsettia">
+            </div>
+          </div>
+        </article>
         <article id="contact">
           <header>
             <h1>Contact Us</h1>
@@ -106,6 +129,9 @@
       <div class="foot-end">
         <p>&copy;2019 Troop 151</p>
       </div>
-    </footer>
+    </footer><!-- FOXYCART -->
+<script data-cfasync="false" src="https://cdn.foxycart.com/t151/loader.js" async defer></script>
+<!-- /FOXYCART -->
+
   </body>
 </html>
