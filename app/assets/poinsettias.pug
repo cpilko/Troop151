@@ -1,0 +1,14 @@
+extends partials/_layout
+
+block vars
+  -var pageTitle = 'Poinsettias'
+  -var pageDesc = 'Troop 151 Annual Poinsettia Sale'
+  -var mastheadImg ='poinsettia.jpg'
+  -var scripts = 'foxycart'
+
+block masthead
+  h1 Poinsettia Fundraiser
+
+block content
+  article#example
+   +foxyitem('6in Poinsettia', 'One poinsettia plant in a 6in pot. Pot is foil covered.', 10, 'https://via.placeholder.com/150', 'P6', 'color', 'Red', 'White', 'Pink', 'Marble')

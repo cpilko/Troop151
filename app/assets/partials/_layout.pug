@@ -3,6 +3,7 @@ include _mixins.pug
 block vars
   -var pageTitle = 'Layout'
   -var pageDesc = 'Description of this page'
+  -var scripts = ''
 
 if mastheadImg
   -var mastheadImgUrl = './img/mastheads/' + mastheadImg
@@ -35,4 +36,5 @@ html(prefix='og: http://ogp.me/ns#', lang='en')
 
     include _foot.pug
 
-    // != js()
+    if scripts == 'foxycart'
+      include _foxycart.html

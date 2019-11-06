@@ -27,3 +27,25 @@ mixin eagle(name, year)
     .eagle-data
       p.eagle-name= name
       p.eagle-year= year
+      
+mixin foxyitem(name, description, price, image, code, option_name, ...options)
+  .item-card
+    p.item-name= name
+    p.item-description= description
+    p.item-price= '$' + price.toFixed(2)
+    .item-image
+      img(src=image)
+    .item-form
+      form(action='https://t151.foxycart.com/cart', method='post', accept-charset='utf-8')
+      input(type='hidden', name='name', value= name)
+      input(type='hidden', name='price', value= price)
+      input(type='hidden', name='code', value= code)
+      input(type='hidden', name='expires', value= Date('2019-12-01T00:00:00').valueOf())
+      input(type='number', name='quantity' value=1, min=0)
+      label(for='quantity') Qty
+      if option_name
+        label.option_label= option_name
+        select(name= option_name)
+          each item in options
+            option(value= `${item}`) #{item}
+      input.submit(type='submit', value=`Add ${name}`)
