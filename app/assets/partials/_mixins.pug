@@ -28,15 +28,17 @@ mixin eagle(name, year)
       p.eagle-name= name
       p.eagle-year= year
       
-mixin foxyitem(name, description, price, image, code, option_name, ...options)
-  .item-card
-    p.item-name= name
-    p.item-description= description
-    p.item-price= '$' + price.toFixed(2)
+mixin foxyitem(name, price, image, code, option_name, ...options)
+  .item-card(id= code)
     .item-image
       img(src=image)
+    p.item-name= name
+    p.item-price= '$' + price.toFixed(2)
+    .item-description
+      if block
+        block
     .item-form
-      form(action='https://t151.foxycart.com/cart', method='post', accept-charset='utf-8')
+      form(action='https://t151.foxycart.com/cart', method='post', accept-charset='utf-8' id= code + '_form')
         input(type='hidden', name='name', value= name)
         input(type='hidden', name='price', value= price)
         input(type='hidden', name='code', value= code)
@@ -48,4 +50,4 @@ mixin foxyitem(name, description, price, image, code, option_name, ...options)
           select(name= option_name)
             each item in options
               option(value= `${item}`) #{item}
-        input.submit(type='submit', value=`Add ${name}`)
+        input.submit(type='submit', value=`Add ${name} to cart`)
