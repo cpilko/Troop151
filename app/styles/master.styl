@@ -261,6 +261,58 @@ article + article
   +below(600px)
     stack()
     center()
+    
+.item-card
+  area()
+  max-width: 50rem
+  margin 1rem auto 0
+  
+.item-card-info
+  display flex
+  flex-flow row wrap
+  justify-content space-around
+
+.item-image
+  flex 0 0 200px
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  img
+    width: auto
+    height: 100%
+    margin: 0 auto
+
+.item-data
+  flex 1 1 auto
+  margin-left 1em
+  
+.item-data-head 
+  display flex
+  subtitle_font()
+  fs(1.5rem)
+  p
+    margin 0
+
+.item-name
+  flex 1 1 auto
+
+.item-price
+  flex 0 0 4rem
+  text-align right
+  
+.item-description
+  max-width 30rem
+  
+.item-form
+  text-align right
+  +html5-inputs()
+    input(dk_color, 95%)
+    font-size 1.15rem
+  input[type=number]
+    width 3rem
+  input[type=submit]
+    button(dk_color, large, dk_text_color)
 
 #contact-form
   .form

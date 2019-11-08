@@ -30,24 +30,27 @@ mixin eagle(name, year)
       
 mixin foxyitem(name, price, image, code, option_name, ...options)
   .item-card(id= code)
-    .item-image
-      img(src=image)
-    p.item-name= name
-    p.item-price= '$' + price.toFixed(2)
-    .item-description
-      if block
-        block
-    .item-form
-      form(action='https://t151.foxycart.com/cart', method='post', accept-charset='utf-8' id= code + '_form')
-        input(type='hidden', name='name', value= name)
-        input(type='hidden', name='price', value= price)
-        input(type='hidden', name='code', value= code)
-        input(type='hidden', name='expires', value= Date('2019-12-01T00:00:00').valueOf())
-        input(type='number', name='quantity' value=1, min=0)
-        label(for='quantity') Qty
-        if option_name
-          label.option_label= option_name
-          select(name= option_name)
-            each item in options
-              option(value= `${item}`) #{item}
-        input.submit(type='submit', value=`Add ${name} to cart`)
+    .item-card-info
+      .item-image
+        img(src=image)
+      .item-data
+        .item-data-head
+          p.item-name= name
+          p.item-price= '$' + price.toFixed(2)
+        .item-description
+          if block
+            block
+        .item-form
+          form(action='https://t151.foxycart.com/cart', method='post', accept-charset='utf-8' id= code + '_form')
+            input(type='hidden', name='name', value= name)
+            input(type='hidden', name='price', value= price)
+            input(type='hidden', name='code', value= code)
+            input(type='hidden', name='category', value='Poinsettia_Sale')
+            input(type='hidden', name='expires', value= Date('2019-12-18T10:00:00').valueOf())
+            input(type='number', name='quantity' value=1, min=0)
+            if option_name
+              label.option_label= option_name.charAt(0).toUpperCase() + option_name.slice(1)
+              select(name= option_name)
+                each item in options
+                  option(value= `${item}\{c+${item.charAt(0)}\}`) #{item.charAt(0).toUpperCase()+item.slice(1)}
+            input.submit(type='submit', value=`Add ${name} to Cart`)
