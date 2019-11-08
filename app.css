@@ -796,6 +796,148 @@ article + article {
     clear: both;
   }
 }
+.item-card {
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.05);
+  background-color: #f5f5f5;
+  padding: 15px;
+  border-radius: 4px;
+  margin: 20px 0;
+  max-width: 50rem;
+  margin: 1rem auto 0;
+}
+.item-card-info {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-flow: row wrap;
+  justify-content: space-around;
+}
+.item-image {
+  -webkit-box-flex: 0;
+          flex: 0 0 200px;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.item-image img {
+  width: auto;
+  height: 100%;
+  margin: 0 auto;
+}
+.item-data {
+  -webkit-box-flex: 1;
+          flex: 1 1 auto;
+  margin-left: 1em;
+}
+.item-data-head {
+  display: -webkit-box;
+  display: flex;
+  font-family: "Sanchez";
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+.item-data-head p {
+  margin: 0;
+}
+.item-name {
+  -webkit-box-flex: 1;
+          flex: 1 1 auto;
+}
+.item-price {
+  -webkit-box-flex: 0;
+          flex: 0 0 4rem;
+  text-align: right;
+}
+.item-description {
+  max-width: 30rem;
+}
+.item-form {
+  text-align: right;
+}
+.item-form input[type='email'],
+.item-form input[type='number'],
+.item-form input[type='password'],
+.item-form input[type='search'],
+.item-form input[type='tel'],
+.item-form input[type='text'],
+.item-form input[type='url'],
+.item-form input[type='color'],
+.item-form input[type='date'],
+.item-form input[type='datetime'],
+.item-form input[type='datetime-local'],
+.item-form input[type='month'],
+.item-form input[type='time'],
+.item-form input[type='week'],
+.item-form textarea {
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.1);
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+  font-family: "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
+  border: solid 1px #bbb;
+  border-radius: 0.2em;
+  outline: none;
+  padding: 0.45em;
+  background: #fff;
+  color: #555;
+  width: 95%;
+  text-shadow: 0 0 1px rgba(255,255,255,0.1);
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  font-size: 1.15rem;
+}
+.item-form input[type='email']:focus,
+.item-form input[type='number']:focus,
+.item-form input[type='password']:focus,
+.item-form input[type='search']:focus,
+.item-form input[type='tel']:focus,
+.item-form input[type='text']:focus,
+.item-form input[type='url']:focus,
+.item-form input[type='color']:focus,
+.item-form input[type='date']:focus,
+.item-form input[type='datetime']:focus,
+.item-form input[type='datetime-local']:focus,
+.item-form input[type='month']:focus,
+.item-form input[type='time']:focus,
+.item-form input[type='week']:focus,
+.item-form textarea:focus {
+  box-shadow: 0 0 5px rgba(0,63,135,0.7);
+  border: 1px solid #18416f;
+  outline: none;
+}
+.item-form input[type=number] {
+  width: 3rem;
+}
+.item-form input[type=submit] {
+  font-size: 18px;
+  padding: 14px 30px;
+  border-radius: 4px;
+  background-color: #003f87;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
+  line-height: 1em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.item-form input[type=submit]:hover,
+.item-form input[type=submit]:focus {
+  background-color: #003c80;
+  color: #f7f7f7;
+  border: none;
+}
+.item-form input[type=submit]:active {
+  background-color: #00397a;
+}
 #contact-form .form {
   margin-top: 0.7rem;
 }
