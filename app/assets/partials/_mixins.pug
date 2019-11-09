@@ -28,7 +28,7 @@ mixin eagle(name, year)
       p.eagle-name= name
       p.eagle-year= year
       
-mixin foxyitem(name, price, image, code, option_name, ...options)
+mixin foxyitem(name, price, image, code, expires, option_name, ...options)
   .item-card(id= code)
     .item-card-info
       .item-image
@@ -46,8 +46,7 @@ mixin foxyitem(name, price, image, code, option_name, ...options)
             input(type='hidden', name='price', value= price)
             input(type='hidden', name='code', value= code)
             input(type='hidden', name='category', value='Poinsettia_Sale')
-            -var date = new Date('2019-11-17T23:59:00')
-            input(type='hidden', name='expires', value= Math.floor(date.getTime()/1000))
+            input(type='hidden', name='expires', value= expires)
             input(type='number', name='quantity' value=1, min=0)
             if option_name
               -var on = option_name.charAt(0).toUpperCase() + option_name.slice(1)
