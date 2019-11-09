@@ -1,7 +1,8 @@
 extends partials/_layout
 
 block vars
-  -var pageTitle = 'Tools and Resources'
+  -var pageFile = 'resources' 
+  -var pageTitle = 'Troop 151 Tools and Resources'
   -var pageDesc = 'Links to forms, websites, and resources that help make Troop 151 go'
   -var mastheadImg ='tools.jpg'
 
@@ -26,7 +27,7 @@ block content
         dt: a(href='https://www.scoutbook.com/mobile' target='_blank') Scoutbook
         dd Scoutbook is our tool that manages advancement, finances and our calendar. A login is required.
         dt: a(href='https://www.scoutbook.com/mobile/references/boy-scouting/' target='blank') Requirements
-        dd BSA requirements for all ranks, awards, and merit badges. This is also on Scoutbook.
+        dd BSA requirements for all ranks, awards, and merit badges provided by Scoutbook.
         dt: a(href='http://my.scouting.org' target='_blank') myScouting Tools
         dd.
           The main portal of the BSA. Take YPT and other training here. There are other
@@ -75,11 +76,11 @@ block content
         dt FBI Fingerprint Check
         dd.
           Only required if you have not been a resident of PA for the last 10 years, but
-          most school districts require it for all volunteers. Begin the process online
-          at the #[a(href='https://www.pa.cogentid.com/index_dpwNew.htm' target='blank') Cogent]
+          most school districts require it for all volunteers. See the current instructions
+          at the 
+          #[a(href='http://www.keepkidssafe.pa.gov/resources/clearances/fbifinger/index.htm' target='blank') KeepKidsSafePA]
           website.
-        dd Fingerprint checks are done at UPS stores. There is a list when you register.
-        dd Fee is $28 and must be paid online.
+        dd A fee is charged to have fingerprints taken.
         dt Disclosure Statement
         dd.
           Complete #[a(href='http://keepkidssafe.pa.gov/cs/groups/webcontent/documents/document/c_160267.pdf') this disclosure statement]
@@ -112,8 +113,68 @@ block content
 
     #trips.tool-section
       h1 Trip Planning and Packing
-      p TODO create content for trip planning and packing
+      dl
+        dt: a(href='https://drive.google.com/open?id=1RIi7sf7Vree0blgGZ1Nu-8CzobsdSCyFXJxuyue-PBw') Weekend Camping Packing List
+        dd. 
+          All the stuff you should need for a weekend of Camping with us.
+        dt: a(href='https://drive.google.com/open?id=1ETljf6doIzupEpEIm8Lk9ldF6CWu4sayX3gBm22fdj0') Summer Camp Packing List
+        dd.
+          All the stuff you need for a week at Summer Camp. 
+        dt Summer Camp Information
+        dd.
+          We attend Summer Camp at Camp Horseshoe in Rising Sun Maryland, typically
+          the last week of June. You can find information about the camp at the
+          a(href='http://cccbsa.org/boy-scout-camp-horseshoe').
+            Camp Horseshoe Website].
+        
 
     #others.tool-section
       h1 Other Resources and Websites
-      p TODO create content for other resources and websites
+      h2 Order of the Arrow
+      p. 
+        The Order of the Arrow (or OA for short) is the honor society of the Boy
+        Scouts of America. Membership is shown on the uniform by a patch on the 
+        right pocket flap and a white sash with a red arrow. Membership is given
+        to Scouts who have achieved the First Class Rank, Camped 15 nights, and
+        are elected by the members of their Troop.
+      p.
+        Troop 151 supports the Order of the Arrow through our local Lodge, Unami 1
+      dl
+        dt: a(href='https://unamilodge.org/') Unami Lodge
+        dd Our local Lodge. Contains most of the information you'll need to know.
+        dt: a(href='https://oa-bsa.org/') National Order of the Arrow
+        dd National site for the Order of the Arrow.
+      
+      h2 Nearby Councils & Camps
+      p These are nearby councils where we've regularly used their facilities for camping.
+      dl
+        dt: a(href='http://colbsa.org') Cradle of Liberty Council
+        dd Our Council
+        dd Resica Falls Scout Reservation, Musser Scout Reservation, Camp Hart & Camp Delmont
+        dt: a(href="http://cccbsa.org") Chester County Council
+        dd Some claim that we may already be a part of Chester County Council with all the stuff we do there.
+        dd Camp Hoseshoe & Camp Ware
+        dt: a(href="https://www.delmarvacouncil.org/") DelMarVa Council
+        dd Camp Rodney
+        dt: a(href="http://padutchbsa.org/") PA Dutch Council
+        dd Bashore Scout Reservation
+        dt: a(href='https://bsawcc.org/') Washington Crossing Council
+        dd Camp Ockanickon
+        dt: a(href="http://www.nepabsa.org/") NE PA Council
+        dd Camp Achehela & Goose Pond Scout Reservation
+        
+      h2 Far Away Camps
+      p Places that are on Chris' personal bucket list.
+      dl
+        dt: a(href='https://www.summitbsa.org/') Summit Bechtel Reserve
+        dd.
+          The BSA's permanent Jamboree home in West Virginia. Also offers some 
+          summer-camp like programs in off years.
+        dt: a(href='http://kisc.ch') Kandersteg
+        dd.
+          Baden Powell established this camp in the Swiss Alps as a permanent mini-jamboree
+          for Scouts from all over the world. Open year round.
+        dt: a(href='http://www.ulfljotsvatn.is/') Úlfljótsvatn Outdoor and Scout Center
+        dd Iceland! Need I say more?
+        dt: a(href='http://www.norjam.org.uk/') NorJam
+        dd An international Scout Jamboree in Norwich, England. Next one is 2022.
