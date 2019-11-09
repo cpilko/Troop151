@@ -15,6 +15,7 @@ module.exports = {
       plugins: ['autoprefixer-stylus', 'axis', 'rupture', 'jeet']
     }
   },
+
   overrides: {
     production: {
       optimize: true,

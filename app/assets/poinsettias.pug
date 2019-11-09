@@ -1,8 +1,9 @@
 extends partials/_layout
 
 block vars
-  -var pageTitle = 'Poinsettias'
-  -var pageDesc = 'Troop 151 Annual Poinsettia Sale'
+  -var pageTitle = 'Poinsettia Sale'
+  -var pageDesc = 'Support Troop 151 in our Annual Poinsettia Sale. Ends November 17.'
+  -var pageFile = "support"
   -var mastheadImg ='poinsettia.jpg'
   -var scripts = 'foxycart'
 
@@ -22,6 +23,7 @@ block content
       li: a(href='#wreaths') Wreaths
       li: a(href='#cemetery') Cemetery Decorations
       li: a(href='#decor') Home Decor
+      li: a(href='#tip') Tip Jar
     p Orders muat be placed by November 17. 
     p Orders will be availabe for pickup on Wednesday, December 4th from Marple Presbyterian Church.
     p We will email you details for pickup a few days before.
@@ -29,25 +31,25 @@ block content
   article#poinsettias
     header
       h1 Poinsettias
-    +foxyitem('6in Poinsettia', 10, 'img/xmas/poinsettia-red.jpg', 'P6', 'color', 'Red', 'White', 'Pink', 'Marble')
+    +foxyitem('6in Poinsettia', 11, 'img/xmas/poinsettia-red.jpg', 'P6', 'color', 'Red', 'White', 'Pink', 'Marble')
       ul
         li One poinsettia plant in a 6 inch pot. 
         li Stands about 10 inches tall. 
         li Pot is foil covered.
         li Choose Red (pictured), White, Pink or Marble Flowers
-    +foxyitem('7in Poinsettia', 15, 'img/xmas/poinsettia-white.jpg', 'P7', 'color', 'Red', 'White', 'Pink', 'Marble')
+    +foxyitem('7in Poinsettia', 16, 'img/xmas/poinsettia-white.jpg', 'P7', 'color', 'Red', 'White', 'Pink', 'Marble')
       ul
         li Two poinsettia plants in a 7-&frac12; inch pot. 
         li Stands about 14 inches tall. 
         li Pot is foil covered.
         li Choose Red, White (pictured), Pink or Marble Flowers
-    +foxyitem('8in Poinsettia', 20, 'img/xmas/poinsettia-pink.jpg', 'P8', 'color', 'Red', 'White', 'Pink', 'Marble')
+    +foxyitem('8in Poinsettia', 21, 'img/xmas/poinsettia-pink.jpg', 'P8', 'color', 'Red', 'White', 'Pink', 'Marble')
       ul
         li Three poinsettia plants in a 8-&frac12; inch pot. 
         li Stands about 18 inches tall. 
         li Pot is foil covered.
         li Choose Red, White, Pink (pictured) or Marble Flowers
-    +foxyitem('10in Poinsettia', 25, 'img/xmas/poinsettia-marble.jpg', 'P10', 'color', 'Red', 'White', 'Pink', 'Marble')
+    +foxyitem('10in Poinsettia', 26, 'img/xmas/poinsettia-marble.jpg', 'P10', 'color', 'Red', 'White', 'Pink', 'Marble')
       ul
         li Four poinsettia plants in a 10 inch pot. 
         li Stands about 30 inches tall. 
@@ -57,48 +59,48 @@ block content
   article#wreaths
     header
       h1 Wreaths
-    +foxyitem('Plain Wreath', 15, 'img/xmas/wreath-plain.jpg', 'WP')
+    +foxyitem('Plain Wreath', 16, 'img/xmas/wreath-plain.jpg', 'WP')
       ul
         li 22 inch diameter, single-faced live frazer fir wreath
         li Plain to accept your decorations
-    +foxyitem('Plain Wreath with Bow', 17, 'img/xmas/wreath-bow.jpg', 'WB', 'bow color', 'red', 'burgandy', 'plaid')
+    +foxyitem('Plain Wreath with Bow', 18, 'img/xmas/wreath-bow.jpg', 'WB', 'bow color', 'red', 'burgundy', 'plaid')
       ul
         li 22 inch diameter, single-faced live frazer fir wreath
         li Plain with a bow
-        li Choose a Red Velvet (pictured), Burgandy Velvet or Plaid Bow
-    +foxyitem('Decorated Wreath', 20, 'img/xmas/wreath-decorated.jpg', 'WD', 'bow color', 'red', 'burgandy', 'plaid')
+        li Choose a Red Velvet (pictured), Burgundy Velvet or Plaid Bow
+    +foxyitem('Decorated Wreath', 21, 'img/xmas/wreath-decorated.jpg', 'WD', 'bow color', 'red', 'burgundy', 'plaid')
       ul
         li 22 inch diameter, single-faced live frazer fir wreath
         li Decorated with Bow, Pine Cones and Berries
         li Wreaths are made so bows can be displayed either Top, Bottom or Side
-        li Choose a Red Velvet, Burgandy Velvet or Plaid (pictured) Bow
-    +foxyitem('Fancy Wreath', 22.5, 'img/xmas/wreath-fancy.jpg', 'WF', 'bow color', 'gold', 'red', 'burgandy')
+        li Choose a Red Velvet, Burgundy Velvet or Plaid (pictured) Bow
+    +foxyitem('Fancy Wreath', 24, 'img/xmas/wreath-fancy.jpg', 'WF', 'bow color', 'gold', 'red', 'burgundy')
       ul
         li 22 inch diameter, single-faced live frazer fir wreath
         li Decorated with Bow w/streamers, Glitter, Gold Pine Cones and Glass Balls
-        li Choose a Gold, Red Velvet, or Burgandy Velvet (pictured) Bow
+        li Choose a Gold, Red Velvet, or Burgundy Velvet (pictured) Bow
         
   article#cemetery
     header
       h1 Cemetery Decorations
-    +foxyitem('Cemetery Log', 17, 'img/xmas/cemetery-log.jpg', 'CL')
+    +foxyitem('Cemetery Log', 18, 'img/xmas/cemetery-log.jpg', 'CL')
       ul
         li 12 inch Log with a 18-20 inch spray & Balsam Fir decorated with a Red Bow, Pine Cones, White Sticks and Red Ruscus
         li Handmade with live Balsam Fir
         li All decorations are waterproof
-    +foxyitem('Small Grave Blanket', 21, 'img/xmas/small-grave-blanket.jpg', 'GB-S')
+    +foxyitem('Small Grave Blanket', 22, 'img/xmas/small-grave-blanket.jpg', 'GB-S')
       ul
         li Approx. 3ft. x 2.5ft. 
         li Balsam Fir with a Red Bow, Pine Cones, White Sticks and Red Ruscus
         li Handmade with live Balsam Fir
         li All decorations are waterproof
-    +foxyitem('Large Grave Blanket', 26, 'img/xmas/large-grave-blanket.jpg', 'GB-L')
+    +foxyitem('Large Grave Blanket', 27, 'img/xmas/large-grave-blanket.jpg', 'GB-L')
       ul
         li Approx. 3ft. x 5ft. 
         li Balsam Fir with a Red Bow, Pine Cones, White Sticks and Red Ruscus
         li Handmade with live Balsam Fir
         li All decorations are waterproof  
-    +foxyitem('Deluxe Grave Blanket', 28, 'img/xmas/deluxe-grave-blanket.jpg', 'GB-D')
+    +foxyitem('Deluxe Grave Blanket', 29, 'img/xmas/deluxe-grave-blanket.jpg', 'GB-D')
       ul
         li Approx. 3ft. x 5ft. 
         li Balsam Fir with a Red Bow, Pine Cones, Statis, Red Ruscus and White Fern Leaves
@@ -108,7 +110,16 @@ block content
   article#decor
     header
       h1 Home Decor
-    +foxyitem('White Pine Roping', 25, 'img/xmas/white-pine-roping.jpg', 'WPR')
+    +foxyitem('White Pine Roping', 26, 'img/xmas/white-pine-roping.jpg', 'WPR')
       ul
         li 75 feet of white pine roping for all your decorating needs.
         li It's a lot of roping. Plan to give some to your friends.
+
+  article#tips
+    header
+      h1 Tip Jar
+    +foxyitem('Griddle Fund', 1, 'img/xmas/griddle.jpg', 'TIP')
+      ul
+        li Help keep cheesteaks in our campouts!
+        li Give to our griddle fund so that we can get a second griddle to feed our growing Troop of growing Scouts.
+  

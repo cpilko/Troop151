@@ -1,3 +1,5 @@
+-var now = new Date()
+-var expires = new Date('2019-11-17T23:59:00')
 footer#footer
   .col-wrap
     .col-thirds
@@ -20,6 +22,10 @@ footer#footer
       ul.foot-nav
         li: a(href='./index.html') Home
         li: a(href='./about.html') About Us
+        if now <= expires
+          li: a(href='./poinsettias.html') Support Us
+        else
+          li: a(href='./support.html') Support Us
         li: a(href='./resources.html') Tools and Resources
         li: a(href='./terms.html') Terms and Privacy Policy
   .foot-end

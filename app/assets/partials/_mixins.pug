@@ -46,11 +46,15 @@ mixin foxyitem(name, price, image, code, option_name, ...options)
             input(type='hidden', name='price', value= price)
             input(type='hidden', name='code', value= code)
             input(type='hidden', name='category', value='Poinsettia_Sale')
-            input(type='hidden', name='expires', value= Date('2019-12-18T10:00:00').valueOf())
+            -var date = new Date('2019-11-17T23:59:00')
+            input(type='hidden', name='expires', value= Math.floor(date.getTime()/1000))
             input(type='number', name='quantity' value=1, min=0)
             if option_name
-              label.option_label= option_name.charAt(0).toUpperCase() + option_name.slice(1)
+              -var on = option_name.charAt(0).toUpperCase() + option_name.slice(1)
+              label.option_label= on
               select(name= option_name)
                 each item in options
-                  option(value= `${item}\{c+${item.charAt(0)}\}`) #{item.charAt(0).toUpperCase()+item.slice(1)}
+                  -var it = item.charAt(0).toUpperCase()+item.slice(1)
+                  option(value= it +'{c+' + it.charAt(0) +'}') #{it}
             input.submit(type='submit', value=`Add ${name} to Cart`)
+            
