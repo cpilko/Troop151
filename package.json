@@ -9,7 +9,7 @@
     "coffeescript": "^2.4.1",
     "jeet": "^7.2.0",
     "jstransformer-marked": "^1.0.3",
-    "marked": "^0.7.0",
+    "marked": "^4.0.10",
     "pugjs-brunch": "^2.11.3",
     "rupture": "^0.7.1",
     "stylus-brunch": "^2.10.1"
