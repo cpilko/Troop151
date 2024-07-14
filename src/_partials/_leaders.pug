@@ -1,0 +1,16 @@
+mixin leader(fname, lname, title, profileImage, eagle)
+  .leader-gallery
+    .leader-image
+      if profileImage
+        img(src='/img/leaders/'+profileImage)
+      else
+        img(src='/img/leaders/no-photo.png')
+      .leader-eagle
+        if eagle 
+          img(src='/img/EagleScout.png')
+    p.leader_name= fname + ' ' + lname
+    p.leader_title!= title.replace('|', '<br>')
+
+each row in Troop151Leaders
+  +leader(row.FirstName, row.LastName, row.Positions, row.Image, row.Eagle)
+

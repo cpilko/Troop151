@@ -1,17 +1,15 @@
 {
   "name": "Troop-151-website",
-  "description": "Brunch Website",
+  "description": "Website for Troop 151, Broomall PA",
   "license": "MIT",
   "repository": "github:cpilko/Troop151",
   "dependencies": {
-    "autoprefixer-stylus": "^1.0.0",
-    "axis": "^1.0.0",
-    "coffeescript": "^2.4.1",
-    "jeet": "^7.2.0",
-    "jstransformer-marked": "^1.0.3",
-    "marked": "^0.7.0",
-    "pugjs-brunch": "^2.11.3",
-    "rupture": "^0.7.1",
-    "stylus-brunch": "^2.10.1"
+    "@11ty/eleventy": "^2.0.1",
+    "csv-parse": "^5.5.6",
+    "jstransformer-markdown-it": "^3.0.0"
+  },
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
   }
 }
