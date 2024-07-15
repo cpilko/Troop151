@@ -1,0 +1,28 @@
+extends partials/_layout
+
+block vars
+  -var pageTitle = 'Support Troop 151'
+  -var pageDesc = 'Your generosity helps support Troop 151.'
+  -var pageFile = "support"
+  -var mastheadImg ='support.jpg'
+  -var scripts = 'foxycart'
+
+block masthead
+  h1 Support Troop 151
+
+block content
+  article#top
+    header
+      h1 Thank You For Your Support
+    p.
+        Troop 151 conducts an annual Poinsettia sale in the fall, and a floral sale in the spring.
+        Your support helps us purchase equipment and pays for camping fees to develop a quality program for our Scouts.
+        Watch for our next sale. In the meantime, our tip jar is always open.
+        
+    article#tips
+    header
+      h1 Tip Jar
+    +foxyitem('Griddle Fund', 1, 'img/xmas/griddle.jpg', 'TIP', 2556147540)
+      ul
+        li Help keep cheesteaks in our campouts!
+        li Give to our griddle fund so that we can get a second griddle to feed our growing Troop of growing Scouts.

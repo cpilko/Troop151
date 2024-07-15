@@ -1,0 +1,15 @@
+{
+  "name": "Troop-151-website",
+  "description": "Website for Troop 151, Broomall PA",
+  "license": "MIT",
+  "repository": "github:cpilko/Troop151",
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "csv-parse": "^5.5.6",
+    "jstransformer-markdown-it": "^3.0.0"
+  },
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  }
+}

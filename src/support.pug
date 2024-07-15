@@ -1,0 +1,24 @@
+extends _partials/_layout
+
+block vars
+  -var pageTitle = 'Support Troop 151'
+  -var pageDesc = 'Your generosity helps support Troop 151.'
+  -var pageFile = "support"
+  -var mastheadImg ='support.jpg'
+
+block masthead
+  h1 Support Troop 151
+
+block content
+  article#top
+    header
+      h1 Thank You For Your Support
+    p.
+        Troop 151 conducts an annual Poinsettia sale in the fall, and a floral sale in the spring.
+        Your support helps us purchase equipment and pays for camping fees to develop a quality program for our Scouts.
+        Watch for our next sale. In the meantime, our tip jar is always open.
+        
+    article#tips
+      header
+        h1 Leave us a tip with #[a(href="https://venmo.com/?txn=pay&audience=friends&recipients=BSA_Troop_151") Venmo!]
+

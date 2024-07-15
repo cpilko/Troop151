@@ -1,0 +1,75 @@
+form(
+  action='https://app.99inbound.com/api/e/qnSf2KrH'
+  method='POST'
+)
+  .col-wrap
+    .formcol
+      .form
+        label(for='name') Name:
+        input(
+          type='text'
+          name='name'
+          id='name'
+          placeholder='Joe Smith'
+          required
+          autocomplete='name'
+        )
+      .form
+        label(for='__replyto') Email:
+        input(
+          type='email'
+          name='__replyto'
+          id='__replyto'
+          placeholder='jsmith@example.com'
+          required
+          autocomplete='email'
+        )
+      .form
+        label(for='phone') Phone:
+        input(
+          type='tel'
+          name='phone'
+          id='phone'
+          placeholder='610-555-1212'
+          autocomplete='tel'
+        )
+    .formcol
+      .form
+        label(for='message') Message:
+        textarea(
+          name='message'
+          id='message'
+          placeholder='Your message here'
+          minlength=20
+          rows=6
+          cols=20
+        )
+  input(
+    type='hidden'
+    name='__redirect'
+    id='__redirect'
+    value=''
+  )
+  input(
+    type='hidden'
+    name='__subject'
+    id='__subject'
+    value='Troop 151 Website Contact'
+  )
+  <div style="position: absolute; left: -5000px;">
+  <input type="checkbox" name="conservative_cornflower_blue_matte_headphones" value="1" tabindex="-1" autocomplete="no">
+  </div>
+  input(
+    type='submit'
+    id='form_submit'
+    value='Send Message'
+  )
+script.
+  var r = document.getElementById('__redirect')
+  var s = window.location.href
+  if (s.indexOf('.html') !== -1 ) {
+    var re = /(.+\/)(.+\.html?$)/i
+    r.value = s.replace(re, '$1') + 'thankyou.html'
+  } else {
+    r.value = s + 'thankyou.html'
+  }

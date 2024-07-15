@@ -1,0 +1,59 @@
+mixin linkbutton(link, text)
+  .more-div
+    span.more-wrap
+      a(href=link, class='more-button')= text
+
+mixin eventItem(title, eventImage)
+  .event-gallery
+    img(src='./img/events/'+eventImage)
+    .background-shade
+      .event-desc
+        h4= title
+        block
+
+mixin leader(name, title, profileImage)
+  .leader-gallery
+    if profileImage
+      img(src='./img/leaders/'+profileImage)
+    else
+      img(src='./img/leaders/no-photo.png')
+    p.leader_name= name
+    p.leader_title= title
+
+mixin eagle(name, year)
+  .eagle-gallery
+    .eagle-logo
+      img(src='./img/eagle_badge.gif')
+    .eagle-data
+      p.eagle-name= name
+      p.eagle-year= year
+      
+mixin foxyitem(name, price, image, code, expires, option_name, ...options)
+  .item-card(id= code)
+    .item-card-info
+      .item-image
+        img(src=image)
+      .item-data
+        .item-data-head
+          p.item-name= name
+          p.item-price= '$' + price.toFixed(2)
+        .item-description
+          if block
+            block
+        .item-form
+          form(action='https://t151.foxycart.com/cart', method='post', accept-charset='utf-8' id= code + '_form')
+            input(type='hidden', name='name', value= name)
+            input(type='hidden', name='price', value= price)
+            input(type='hidden', name='code', value= code)
+            input(type='hidden', name='category', value='Poinsettia_Sale')
+            input(type='hidden', name='expires', value= expires)
+            input(type='number', name='quantity' value=1, min=0)
+            if option_name
+              -var on = option_name.charAt(0).toUpperCase() + option_name.slice(1)
+              label.option_label= on
+              select(name= option_name)
+                each item in options
+                  -var it = item.charAt(0).toUpperCase()+item.slice(1)
+                  option(value= it +'{c+' + it.charAt(0) +'}') #{it}
+            input.submit(type='submit', value=`Add ${name} to Cart`)
+            

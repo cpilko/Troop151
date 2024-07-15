@@ -1,0 +1,20 @@
+meta(charset='utf-8')
+meta(http-equiv='X-UA-Compatible', content='IE=edge')
+meta(name='description', content= pageDesc)
+meta(name='author', content= "Troop 151 Broomall, PA")
+meta(name="viewport" content="width=device-width, initial-scale=1")
+meta(name="generator" content=eleventy.generator)
+meta(property="og:title", content= pageTitle)
+meta(property="og:description", content= pageDesc)
+meta(property="og:type", content="website")
+
+meta(property="og:url", content="https://t151.org" + page.url + 'index.html' )
+meta(property="og:image", content= "https://t151.org" + mastheadImgUrl)
+meta(property="og:image:width", content="3264")
+meta(property="og:image:height", content="2448")
+
+include _favicon.pug
+
+link(href="/base.css", rel="stylesheet", type="text/css")
+
+include _analytics.html
