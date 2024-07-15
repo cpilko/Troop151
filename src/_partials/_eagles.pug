@@ -1,0 +1,10 @@
+mixin eagle(name, year)
+  .eagle-gallery
+    .eagle-logo
+      img(src='/img/EagleScout.png')
+    .eagle-data
+      p.eagle-name= name
+      p.eagle-year= year
+
+each row in T151Eagles
+  +eagle(row.Name, row.Year)
