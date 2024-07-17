@@ -1,0 +1,30 @@
+# This file populates the "essentials" article on the main page
+# Images are read from the "/src/img" folder
+#
+# This file is a YAML file. You may edit this file.
+# Data is structured by indents.
+# New items under events: must have a dash+space "- " omitting the space will cause problems.
+# https://yaml.org/spec/1.2.2/
+
+---
+
+header: About us
+button:
+  text: Learn more about Troop 151
+  link: /about/
+items:
+  - 
+    name: meetings
+    image: citizenship_in_the_community_lg.png
+    text: We meet at 7pm on Wednesdays in Fellowship Hall at Marple Presbyterian Church
+      <a href='https://maps.app.goo.gl/BDGVwyJCPEkfTtQL7', target='_blank'> 
+      Map</a>
+  - 
+    name: outings
+    image: camping_lg.png
+    text: Each month our goal is to have two outings&colon; One campout and one other event.
+  - 
+    name: scoutled
+    image: hiking_lg.png
+    text: We are Scout-Led&colon; Our Scouts develop our program 
+      and our adult leaders help our Scouts make it happen.

@@ -1,5 +1,5 @@
 # This file populates the "events" article on the main page
-# Images are read from the "/sec/img/events" folder
+# Images are read from the "/src/img/events" folder
 #
 # This file is a YAML file. You may edit this file.
 # Data is structured by indents.
