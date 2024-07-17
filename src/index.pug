@@ -32,8 +32,13 @@ block content
 
   article#events
     header
-      h1 What We Do
+      h1= events.header
     .col-wrap
-      include _partials/_sample_events.pug
-    p.events-foot.
-      All quotes by Lord Baden-Powell, the founder of Scouting
+      each e in events.events
+        .event-gallery
+          img(src='/img/events/'+e.image)
+          .background-shade
+            .event-desc
+              h4= e.name
+              p!= e.text.trim()
+    p.events-foot!= events.footer

@@ -1,0 +1,66 @@
+# This file populates the "events" article on the main page
+# Images are read from the "/sec/img/events" folder
+#
+# This file is a YAML file. You may edit this file.
+# Data is structured by indents.
+# New items under events: must have a dash+space "- " omitting the space will cause problems.
+# https://yaml.org/spec/1.2.2/
+
+---
+
+header: What We Do
+footer: All quotes by Lord Baden-Powell, the founder of Scouting
+events:
+  - 
+    name: Camping
+    image: camping.jpg
+    text: We are not a club or a Sunday school class, but a school of the woods.
+  - 
+    name: Community Involvement
+    image: civics.jpg
+    text: We must change boys from a &lsquo;what can I get&rsquo; 
+      to a &lsquo;what can I give&rsquo; attitude.
+  - 
+    name: Marksmanship
+    image: marksman.jpg
+    text: The Scout is not governed by <b>don’t</b>, 
+      but is led by <b>do</b>.
+  - 
+    name: STEM
+    image: stem.jpg
+    text: A fisherman does not bait his hook with food he likes. 
+      He uses food the fish likes. So with Scouts.  
+  - 
+    name: Service
+    image: service.jpg
+    text: The real way to gain happiness is to give it to others.
+  - 
+    name: Patriotism
+    image: parade_marching.jpg
+    text: Loyalty is a feature in a boy’s character that inspires boundless hope.
+  - 
+    name: Winning
+    image: winning.jpg
+    text: It is important to arrange games and competition so that 
+      all Scouts of the troop take part.
+  - 
+    name: Learning
+    image: learning.jpg
+    text: In Scouting, a Scout is encouraged to educate himself instead of being instructed.
+  - 
+    name: Hiking
+    image: hiking.jpg
+    text: Where is there a boy to whom the call of the wild and the open road does not appeal?
+  - 
+    name: Summer Camp
+    image: summer_camp.jpg
+    text: A week of camp life is worth six months of theoretical teaching in the meeting room.
+  - 
+    name: Fun and Games
+    image: gaga.jpg
+    text: Vigorous Scout games are the best form of physical education 
+      because most of them bring in moral education.
+  - 
+    name: First Aid
+    image: first_aid.jpg
+    text: The most important object in Boy Scout training is to educate, not instruct
