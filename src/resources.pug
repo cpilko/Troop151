@@ -10,173 +10,28 @@ block masthead
   h1 Tools and Resources
   p The forms, websites and other resources that help things go.
 
+//- Content comes from /src/_data/resources.yaml 
 block content
   .prose-page
     #toc.toc
       h1 Table of Contents
       ul
-        li: a(href='#essentials') Essentials
-        li: a(href='#training') Training and Background Checks
-        li: a(href='#trips') Trip planning and Packing
-        li: a(href='#others') Other councils and websites
+        each r in resources
+          li: a(href='#' + r.slug ) #{r.section}
 
-    #essentials.tool-section
-      h1 Essentials
-      h2 The most frequently used resources are here.
-      dl
-        dt: a(href='https://scoutbook.scouting.org/' target='_blank') Scoutbook
-        dd Scoutbook is our tool that manages advancement, finances and our calendar. A login is required.
-        dt: a(href='https://www.scouting.org/programs/scouts-bsa/advancement-and-awards/' target='blank') Advancement Requirements
-        dd BSA requirements for all ranks and awards.
-        dt: a(href='https://www.scouting.org/skills/merit-badges/all/' target='blank') Merit Badge Requirements
-        dd BSA requirements for all ranks and awards.
-        dt: a(href='http://my.scouting.org' target='_blank') myScouting Tools
-        dd.
-          The main portal of the BSA. Take YPT and other training here. There are other
-          tools that will show depending on your official position in the BSA.
-        dt: a(href='http://www.scouting.org/scoutsource/HealthandSafety/ahmr.aspx' target='_blank') BSA Medical Forms
-        dd.
-          Medical forms are required for all participants at Scouting events. Forms are valid for
-          one year.
-        dd.
-          The link above has the different medical forms for each class of event, and
-          a description of when you need each one.
-        dt: a(href='http://scoutstuff.com/' target='_blank') The Scout Shop
-        dd.
-          Online home of the BSA's official supply division.
-        dt: a(href='http://colbsa.org' target='_blank') Cradle of Liberty Council
-        dd.
-          Our Council's homepage, with information about what is going on in our local
-          Scouting community.
-        dt: a(href='https://www.facebook.com/groups/Troop151Broomall/' target='_blank') Facebook Group
-        dd.
-          The Troop 151 Facebook group. This is a closed group for current members only.
-        dt: a(href='https://github.com/cpilko/Troop151/' target='_blank') GitHub
-        dd.
-          GitHub hosts this website, and some other documents.
-
-    #training.tool-section
-      h1 Training Resources
-      h2 Training resources and background check information.
-      h2 To be a Volunteer in the BSA, you need all of the following:
-      dl
-        dt Youth Protection Training
-        dd.
-          YPT is required every two years. To take this, login to
-          #[a(href='http://my.scouting.org' target='_blank') myScouting.org].
-          There is a large, red link for YPT on the home screen.
-        dt PA Criminal Background Checks
-        dd.
-          Complete this on the #[a(href='https://epatch.pa.gov/home' target='_blank') ePATCH]
-          website. Required every 3 years for all volunteers who work with youth in PA.
-        dd Free.
-        dt PA Child Abuse Clearance
-        dd.
-          Complete this on the #[a(href='https://www.compass.state.pa.us/cwis/public/home' target='_blank') CWIS]
-          website. Required every 3 years for all volunteers who work with youth in PA.
-        dd Free.
-        dt FBI Fingerprint Check
-        dd.
-          Only required if you have not been a resident of PA for the last 10 years, but
-          most school districts require it for all volunteers. See the current instructions
-          at the 
-          #[a(href='https://www.pa.gov/en/agencies/dhs/resources/keep-kids-safe/child-abuse-clearances.html' target='blank') KeepKidsSafePA]
-          website.
-        dd A fee is charged to have fingerprints taken.
-        dt Disclosure Statement
-        dd.
-          Complete #[a(href='https://www.pa.gov/content/dam/copapwp-pagov/en/dhs/documents/keepkidssafe/resources/documents/Disclosure%20Statement%20for%20Volunteers.pdf') this disclosure statement]
-          and submit this with your paperwork.
-        dt Upload to the COL Website
-        dd.
-          After you receive PDF certificates for all the above items,
-          #[a(href='https://docs.google.com/forms/d/e/1FAIpQLSen0U3DBa7izPEFEon4h7Yw-ghGT_esp9yfweyLq8A-BrqgAA/viewform?edit_requested=true' target='_blank') upload them here]. 
-          This sends them to the Cradle of Liberty Council who needs to keep them on record.
-        dt Email to Marple Pres
-        dd.
-          Marple Pres "owns" our troop, so they need a copy too.
-        dt Position Specific Training
-        dd.
-          To remain on the charter in our Council, you must be fully trained for
-          your position according to the BSA. Login to #[a(href='http://my.scouting.org' target='_blank') myScouting.org]
-          and visit "My Dashboard" to review your current training status, and take the online courses you need.
-        dd Some courses require in-person training.
-        dt PA Mandated Reporter Training
-        dd.
-          In certain people who work with youth have been nominated as "Mandated Reporters" &mdash;
-          meaning there are civil and criminal penalties if you witness an
-          act of child abuse and fail to report it.
-        dd.
-          Most Scouting volunteers qualify as mandated reporters. Others are "Permissive Reporters."
-        dd.
-          Want to know what is expected of you as a mandated or permissive reporter?
-          Take #[a(href='https://www.pa.gov/en/agencies/dhs/resources/keep-kids-safe/mandated-reporter-training.html' target='_blank') Mandated Reporter Training].
-        dd There are both free and paid courses available.
-
-    #trips.tool-section
-      h1 Trip Planning and Packing
-      dl
-        dt: a(href='https://drive.google.com/open?id=1RIi7sf7Vree0blgGZ1Nu-8CzobsdSCyFXJxuyue-PBw') Weekend Camping Packing List
-        dd. 
-          All the stuff you should need for a weekend of Camping with us.
-        dt: a(href='https://drive.google.com/open?id=1ETljf6doIzupEpEIm8Lk9ldF6CWu4sayX3gBm22fdj0') Summer Camp Packing List
-        dd.
-          All the stuff you need for a week at Summer Camp. 
-        dt Summer Camp Information
-        dd.
-          We attend Summer Camp at Camp Horseshoe in Rising Sun Maryland, typically
-          the last week of June. You can find information about the camp at the
-          #[a(href='http://cccbsa.org/boy-scout-camp-horseshoe') Camp Horseshoe Website] and the 
-          #[a(href='https://www.hsraa.org/') Horseshoe Scout Reservation Alumni Association ].
-        
-
-    #others.tool-section
-      h1 Other Resources and Websites
-      h2 Order of the Arrow
-      p. 
-        The Order of the Arrow (or OA for short) is the honor society of the Boy
-        Scouts of America. Membership is shown on the uniform by a patch on the 
-        right pocket flap and a white sash with a red arrow. Membership is given
-        to Scouts who have achieved the First Class Rank, Camped 15 nights, and
-        are elected by the members of their Troop.
-      p.
-        Troop 151 supports the Order of the Arrow through our local Lodge, Unami 1
-      dl
-        dt: a(href='https://unamilodge.org/' target='_blank') Unami Lodge
-        dd Our local Lodge. Contains most of the information you'll need to know.
-        dt: a(href='https://oa-bsa.org/' target='_blank') National Order of the Arrow
-        dd National site for the Order of the Arrow.
-      
-      h2 Nearby Councils & Camps
-      p These are nearby councils where we've regularly used their facilities for camping.
-      dl
-        dt: a(href='http://colbsa.org' target='_blank') Cradle of Liberty Council
-        dd Our Council
-        dd Resica Falls Scout Reservation, Musser Scout Reservation, Camp Hart & Camp Delmont
-        dt: a(href="http://cccbsa.org" target='_blank') Chester County Council
-        dd Some claim that we may already be a part of Chester County Council with all the stuff we do there.
-        dd Camp Hoseshoe & Camp Ware
-        dt: a(href="https://www.delmarvacouncil.org/" target='_blank') DelMarVa Council
-        dd Camp Rodney
-        dt: a(href="http://padutchbsa.org/" target='_blank') PA Dutch Council
-        dd Bashore Scout Reservation
-        dt: a(href='https://bsawcc.org/' target='_blank') Washington Crossing Council
-        dd Camp Ockanickon
-        dt: a(href="http://www.nepabsa.org/" target='_blank') NE PA Council
-        dd Camp Achehela & Goose Pond Scout Reservation
-        
-      h2 Far Away Camps
-      p Places that are on Chris' personal bucket list.
-      dl
-        dt: a(href='https://www.summitbsa.org/' target='_blank') Summit Bechtel Reserve
-        dd.
-          The BSA's permanent Jamboree home in West Virginia. Also offers some 
-          summer-camp like programs in off years.
-        dt: a(href='http://kisc.ch' target='_blank') Kandersteg
-        dd.
-          Baden Powell established this camp in the Swiss Alps as a permanent mini-jamboree
-          for Scouts from all over the world. Open year round.
-        dt: a(href='http://www.ulfljotsvatn.is/' target='_blank') Úlfljótsvatn Outdoor and Scout Center
-        dd Iceland! Need I say more?
-        dt: a(href='http://www.norjam.org.uk/' target='_blank') NorJam
-        dd An international Scout Jamboree in Norwich, England. Next one is 2025.
+    each r in resources
+        .tool-section(id= r.slug)
+            h1= r.section
+            if r.subtitle
+                h2= r.subtitle
+            if r.text
+                each para in r.text.split('\n')
+                    p!= para
+            dl
+              each item in r.items
+                if item.link
+                    dt: a(href=item.link target='_blank') #{item.name}
+                else
+                    dt= item.name
+                each para in item.text.split('\n')
+                    dd!= para

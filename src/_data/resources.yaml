@@ -1,0 +1,175 @@
+# This file populates the "Tools and Resources" page
+#
+# This file is a YAML file. You may edit this file.
+# Data is structured by indents.
+# New items under events: must have a dash+space "- " omitting the space will cause problems.
+# https://yaml.org/spec/1.2.2/
+
+---
+
+- section: Essentials
+  slug: essentials
+  items:
+    - name: Scoutbook
+      link: https://scoutbook.scouting.org/
+      text: Scoutbook is our tool that manages your Scout's advancement. 
+        Contact a leader for an invitation if you need one.
+    - name: Advancement Requirements
+      link: https://www.scouting.org/programs/scouts-bsa/advancement-and-awards/
+      text: BSA requirements for all ranks and awards.
+    - name: Merit Badges
+      link: https://www.scouting.org/skills/merit-badges/all/
+      text: BSA requirements for all Merit Badges
+    - name: myScouting Tools
+      link: http://my.scouting.org
+      text: The main portal of the BSA. Take YPT and other training here. There are other
+        tools that may show depending on your official position in the BSA.
+    - name: BSA Medical Forms
+      link: http://www.scouting.org/scoutsource/HealthandSafety/ahmr.aspx
+      text: Medical forms are required for all participants at Scouting events. Forms are valid for
+        one year.
+
+        The link above has the different medical forms for each class of event, and
+        a description of when you need each one.
+    - name: The Scout Shop
+      link: http://scoutstuff.com/
+      text: Online home of the BSA's official supply division.
+    - name: Cradle of Liberty Council
+      link: http://colbsa.org
+      text: Our Council's homepage, with information about what is going on in our local
+        Scouting community.
+    - name: Troop 151 Facebook Group
+      link: https://www.facebook.com/groups/Troop151Broomall/
+      text: The Troop 151 Facebook group. This is a closed group for current members only.
+    - name: GitHub
+      link: https://github.com/cpilko/Troop151/
+      text: GitHub hosts this website. Request access if you would like to help administer it.
+- section: Training Resources
+  slug: training
+  subtitle: Training resources and background check information.
+  text: To be a Volunteer in the BSA, you need all of the following&colon;
+  items: 
+    - name: Youth Protection Training
+      text: YPT is required every two years. To take this, login to
+        <a href='http://my.scouting.org' target='_blank'>myScouting.org</a>.
+        There is a large, red link for YPT on the home screen.
+    - name: PA Criminal Background Checks
+      text: Complete this on the <a href='https://epatch.pa.gov/home' target='_blank'>ePATCH</a>
+        website. Required every 3 years for all volunteers who work with youth in PA.
+        
+        Free for volunteers.
+    - name: PA Child Abuse Clearance
+      text: Complete this on the <a href='https://www.compass.state.pa.us/cwis/public/home' target='_blank'>CWIS</a>
+        website. Required every 3 years for all volunteers who work with youth in PA.
+        
+        Free for volunteers.
+    - name: FBI Fingerprint Check
+      text: Only required if you have not been a resident of PA for the last 10 years, but
+        most school districts require it for all volunteers. See the current instructions
+        at the 
+        <a href='https://www.pa.gov/en/agencies/dhs/resources/keep-kids-safe/child-abuse-clearances.html' target='blank'>KeepKidsSafePA</a>
+        website. You must visit an authorized location to be fingerprinted.
+        
+        A fee is charged to have fingerprints taken.
+    - name: Disclosure Statement
+      text: If you have been a PA resident for the last 10 years, 
+        complete <a href='https://www.pa.gov/content/dam/copapwp-pagov/en/dhs/documents/keepkidssafe/resources/documents/Disclosure%20Statement%20for%20Volunteers.pdf'>this disclosure statement</a>
+        and submit this with your paperwork in lieu of fingerprints.
+    - name: Upload to the COL Website
+      text: After you receive PDF certificates for all the above items,
+        <a href='https://docs.google.com/forms/d/e/1FAIpQLSen0U3DBa7izPEFEon4h7Yw-ghGT_esp9yfweyLq8A-BrqgAA/viewform?edit_requested=true' target='_blank'>upload your clearances</a>. 
+        This sends them to the Cradle of Liberty Council who needs to keep them on record. 
+    - name: Email to Marple Pres
+      text: Marple Pres "owns" our troop, so they need a copy too.
+    - name: Position Specific Training
+      text: To remain a Troop 151 volunteer, you must be fully trained for
+        your position according to the BSA. Login to <a href='http://my.scouting.org' target='_blank'>myScouting.org</a>
+        and visit "My Dashboard" to review your current training status, and take the online courses you need.
+        
+        Some courses require in-person training.
+    - name: PA Mandated Reporter Training 
+      text: In certain people who work with youth have been nominated as "Mandated Reporters" &mdash;
+        meaning there are civil and criminal penalties if you witness an
+        act of child abuse and fail to report it.
+
+        Most Scouting volunteers qualify as mandated reporters. Others are "Permissive Reporters."
+        
+        Want to know what is expected of you as a mandated or permissive reporter?
+        Take <a href='https://www.pa.gov/en/agencies/dhs/resources/keep-kids-safe/mandated-reporter-training.html' target='_blank'>Mandated Reporter Training</a>.
+        
+        There are both free and paid courses available.
+
+        Mandated reporter training is presently <b><u>not required</u></b>.
+- section: Trip Planning and Packing
+  slug: trips
+  items:         
+    - name: Weekend Camping Packing List
+      link: https://drive.google.com/open?id=1RIi7sf7Vree0blgGZ1Nu-8CzobsdSCyFXJxuyue-PBw
+      text: All the stuff you should need for a weekend of Camping with us.
+    - name: Summer Camp Packing List
+      link: https://drive.google.com/open?id=1ETljf6doIzupEpEIm8Lk9ldF6CWu4sayX3gBm22fdj0
+      text: All the stuff you need for a week at Summer Camp.
+    - name: Summer Camp Information
+      text: We attend Summer Camp at Camp Horseshoe in Rising Sun Maryland, typically
+          the last week of June. You can find information about the camp at the
+          <a href='http://cccbsa.org/boy-scout-camp-horseshoe'>Camp Horseshoe Website</a> and the 
+          <a href='https://www.hsraa.org/'>Horseshoe Scout Reservation Alumni Association</a>.
+- section: Order of the Arrow
+  slug: oa
+  text: The Order of the Arrow (or OA for short) is the honor society of the Boy
+    Scouts of America. Membership is shown on the uniform by a patch on the 
+    right pocket flap and a white sash with a red arrow. Membership is given
+    to Scouts who have achieved the First Class Rank, Camped 15 nights, and
+    are elected by the members of their Troop.
+
+    Troop 151 supports the Order of the Arrow through our local Lodge, Unami 1
+  items: 
+    - name: Unami Lodge
+      link: https://unamilodge.org/
+      text: Our local Lodge. Contains most of the information you'll need to know.
+    - name: National Order of the Arrow
+      link: https://oa-bsa.org/
+      text: National site for the Order of the Arrow.
+- section: Nearby Councils & Camps
+  slug: nearby-camps
+  text: These are nearby councils where we've regularly used their facilities for camping.
+  items:
+    - name: Cradle of Liberty Council
+      link: http://colbsa.org
+      text: Our Council
+        
+        Resica Falls Scout Reservation, Musser Scout Reservation, Camp Hart & Camp Delmont
+    - name: Chester County Council
+      link: http://cccbsa.org
+      text: Some claim that we may already be a part of Chester County Council with all the stuff we do there.
+        Camp Hoseshoe & Camp Ware
+    - name: DelMarVa Council
+      link: https://www.delmarvacouncil.org/
+      text: Camp Rodney
+    - name: PA Dutch Council
+      link: http://padutchbsa.org/
+      text: Camp Bashore
+    - name: Washington Crossing Council
+      link: https://bsawcc.org/
+      text: Camp Ockanickon
+    - name: NE PA Council
+      link: http://www.nepabsa.org/
+      text: Camp Achehela & Goose Pond Scout Reservation
+- section: Far Away Camps
+  slug: far-away-camps
+  text: Places that are on Chris' personal bucket list.
+  items:
+    - name: Summit Bechtel Reserve
+      link: https://www.summitbsa.org/
+      text: The BSA's permanent Jamboree home in West Virginia. Also offers some 
+        summer-camp like programs in off years.
+    - name: Kandersteg 
+      link: http://kisc.ch
+      text: Baden Powell established this camp in the Swiss Alps as a permanent mini-jamboree
+        for Scouts from all over the world. Open year round.
+    - name: Úlfljótsvatn Outdoor and Scout Center 
+      link: http://www.ulfljotsvatn.is/
+      text: Iceland! Need I say more?
+    - name: NorJam
+      link: http://www.norjam.org.uk/
+      text: An international Scout Jamboree in Norwich, England. Next one is 2025.
