@@ -10,10 +10,6 @@ block masthead
   h1 About Troop 151
 
 block content
-  article#mission
-    heading
-      h1 Mission
-    //- p TODO: Write Mission Statement
   article#values
     heading
       h1 Values
@@ -37,15 +33,13 @@ block content
           dd to keep myself physically strong,
           dd mentally awake,
           dd and morally straight.
-  article#history
-    heading
-      h1 History
   article#leadership
     heading
       h1 Leadership
     .col-wrap
+      //- Content comes from /src/_data/Troop151Leaders.csv 
       include _partials/_leaders.pug
-    +linkbutton('resources.html#training', 'Become a Leader')
+    +linkbutton('/resources/#training', 'Become a Leader')
   article#eagles
     heading
       h1 Eagles Nest
@@ -54,4 +48,7 @@ block content
         the years of hard work these Scouts performed learning leadership, outdoor skills, and
         dedicating themselves to service. We are proud of all of our Eagles.
       .col-wrap
+        //- Content comes from /src/_data/T151Eagles.csv 
         include _partials/_eagles.pug
+  article#history
+    include:markdown-it ../content_files/history.md
